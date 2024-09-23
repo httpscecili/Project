@@ -4,7 +4,7 @@ table tr td{
 
 header {
     display: flex;
-    background-image: url("img/img.png"); /*Trocar img e ajustar com a pag web*/
+    background-image: url("stellantis.jpg"); /*Trocar img e ajustar com a pag web*/
     background-size: cover; /* Ou use contain, dependendo de como você deseja mostrar a imagem */
     background-position: center;
     background-repeat: no-repeat;
