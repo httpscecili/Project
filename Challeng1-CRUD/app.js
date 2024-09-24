@@ -1,4 +1,17 @@
-var form = document.getElementById("myForm"),
+import {sqlite3} from 'sqlite3';
+import { open } from 'sqlite';
+
+     async function criarEPopularTabelaUuarios (name, age, city, email, phone, post, sDate ) {
+        const db = await open(){
+              
+            filename: './banco.db ',
+            driver: sqlite3.driver
+        }
+
+        db.run( `CREATE TABLE IF NOT EXIST`);
+     }
+
+    var form = document.getElementById("myForm"),
     imgInput = document.querySelector(".img"),
     file = document.getElementById("imgInput"),
     userName = document.getElementById("name"),
