@@ -8,8 +8,10 @@ import { open } from 'sqlite';
             driver: sqlite3.driver
         }
 
-        db.run( `CREATE TABLE IF NOT EXIST`);
-     }
+        db.run( `CREATE TABLE IF NOT EXISTS users (pic BLOB, name TEXT PRIMARY KEY, age NUMBER, city TEXT, email TEXT, phone TEXT, post TEXT, sDate TEXT)`);
+    }
+
+    criarEPopularTabelaUuarios();
 
     var form = document.getElementById("myForm"),
     imgInput = document.querySelector(".img"),
