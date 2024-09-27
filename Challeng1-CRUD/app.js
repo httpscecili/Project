@@ -1,7 +1,7 @@
-import {sqlite3} from 'sqlite3';
+import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 
-     async function criarEPopularTabelaUuarios (name, age, city, email, phone, post, sDate) {
+     async function criarEPopularTabelaUsuarios (name, age, city, email, phone, post, sDate) {
         const db = await open({
             filename: './banco.db',
             driver: sqlite3.Database
